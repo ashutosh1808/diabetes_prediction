@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title> Diabetes Predictor </title>
+	<style>
+	*{font-size:120%; font-family:Verdana;}
+	</style>
+</head>
+<body>
+	<center>
+		<h1> Predict if you have diabetes </h1>	
+		<form action="/pred" method="post">
+			<input type="number" placeholder="enter glucose level" name="glu" required/>
+			<br/><br/>
+			<input type="number" placeholder="enter pregnancies" min="0" name="preg" required/>
+			<br/><br/>
+			<input type="number" step="any" placeholder="enter bmi" name="bmi" required/>
+			<br/><br/>
+			<input type="number" placeholder="enter age" name="age" required/>
+			<br/><br/>
+			<input type="submit" value="Predict"/>
+		</form>
+			{{msg}}
+	</center>
+</body>
+</html>
